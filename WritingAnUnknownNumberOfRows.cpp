@@ -16,7 +16,24 @@ int main()
     //Build the message that we intent to write
     const std::string greeting = "Hello, " + name + "!";
 
-    //rewrite this part
+    // the number of blanks surrounding the greeting
+    const int pad = 1;
+
+    //total number of rows to write
+    const int rows = pad * 2 + 3;
+
+    //seperate output from the input
+    std::cout << std::endl;
+
+    //write "rows" rows of output
+    int r = 0;
+
+    // invarient: we have written r rows so far
+    while (r != rows) {
+        //write a row of output
+        std::cout << std::endl;
+        ++r;
+    }
 
 
 
